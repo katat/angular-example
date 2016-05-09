@@ -1,0 +1,11 @@
+<!-- smart table paginator -->
+<div class="choose-page">
+    <span class="arrow-left" data-ng-click="selectPage(currentPage - 1)"></span>
+    <span class="prev" data-ng-click="selectPage(currentPage - 1)">Prev</span>
+    <span class="page-number" data-ng-click="selectPage(1)" data-ng-if="currentPage > 2&&numPages > 2">1</span>
+    <span class="page-ellipsis" data-ng-if="currentPage > 2&&numPages >= 4&&currentPage>3">...</span>
+    <span data-ng-repeat="page in pages" data-ng-click="selectPage(page)" class="page-number" data-ng-class="{choose: page===currentPage}">{{page}}</span>
+    <span class="page-ellipsis" data-ng-if="currentPage < (numPages - 1)&&numPages > 3&&currentPage<numPages-1">...</span>
+    <span class="page-number" data-ng-click="selectPage(numPages)" data-ng-if="currentPage < (numPages)&&numPages >= 3">{{numPages}}</span>
+    <span class="next" data-ng-click="selectPage(currentPage + 1)">Next</span><span class="arrow-right" data-ng-click="selectPage(currentPage + 1)"></span>
+</div>

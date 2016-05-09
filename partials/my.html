@@ -1,0 +1,289 @@
+<div data-st-table="problemList" data-st-safe-src="displayedProblemList">
+    <!-- my page mobile view -->
+    <div class="mobile-view">
+        <div class="mobile-header visible-mobile">
+            <span class="mobile-header-title">DASHBOARD</span>
+            <div class="mobile-nav visible-mobile">
+                <ul>
+                    <li class="mobile-my-problem active">
+                        <a data-ui-sref="home.my" href="javascript:;">My Problems</a>
+                    </li>
+                    <li class="mobile-ever-problem">
+                        <a data-ui-sref="home.everyone" href="javascript:;">Everyone's Problems</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- mobile table -->
+        <div class="mobile-table visible-mobile">
+            <div class="problem-item" data-ng-repeat="problem in problemList" data-ng-show="problem.status!=='closed'" data-ng-swipe-left="toggleOptions()" data-ng-swipe-right="toggleOptions()" data-ng-click="gotoProblemDetails(problem.id)">
+                <div class="mobile-border-none"></div>
+                <div class="mobile-list">
+                    <div class="list-content" data-ng-class="{left: showOptions}">
+                        <div class="list-main my-problem-main">
+                            <div class="main-top">
+                                <span class="main-top-text">
+                                    {{problem.name.substring(0, 50) + (problem.name.length > 50?'...':'')}}
+                                </span>
+                            </div>
+                            <div class="main-middle">
+                                <span class="date"><span class="date-icon"></span>{{problem.createDate | date:'dd/MM/yyyy'}}</span>
+                                <span class="people"><span class="people-icon"></span>4</span>
+                                <span class="status status-green" data-ng-if="problem.status==='open'">OPEN TO CROWD</span>
+                                <span class="status status-private" data-ng-if="problem.status==='private'">PRIVATE</span>
+                                <span class="status status-closed" data-ng-if="problem.status==='closed'">CLOSED</span>
+                            </div>
+                            <div class="main-bottom">
+                                <span class="bottom-text">
+                                    {{problem.name.substring(0, 120) + (problem.name.length > 120?'...':'')}}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mobile-answers my-problem-answers">
+                            <div class="mobile-answers-bg">
+                                <span class="answers-number">{{problem.answers.length}}</span>
+                            </div>
+                            <span class="mobile-answers-text">answers</span>
+                        </div>
+                        <div class="list-edit">
+                            <div class="delete" data-ng-click="toggleDeleteModal(problem);$event.stopPropagation()">
+                                <div class="delete-icon"></div>
+                                <div class="delete-text">Delete</div>
+                            </div>
+                            <div class="list-close" data-ng-click="toggleCloseModal(problem);$event.stopPropagation()">
+                                <div class="list-close-icon"></div>
+                                <div class="list-close-text">Close</div>
+                            </div>
+                            <div class="access" data-ng-click="togglePublic(problem);$event.stopPropagation()">
+                                <div class="access-check" data-ng-class="{'swich-on': problem.status!=='private','swich-off': problem.status==='private'}">
+                                    <a href="">
+                                        <span></span>
+                                    </a>
+                                </div>
+                                <span class="access-text">Crowd Access</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-line" data-ng-if="hasClosedProblems()">
+                <span class="subtitle">CLOSED PROBLEMS</span>
+            </div>
+            <div class="problem-item" data-ng-repeat="problem in problemList" data-ng-show="problem.status==='closed'" data-ng-swipe-left="toggleOptions()" data-ng-swipe-right="toggleOptions()" data-ng-click="gotoProblemDetails(problem.id)">
+                <div class="mobile-border-none"></div>
+                <div class="mobile-list">
+                    <div class="list-content" data-ng-class="{left: showOptions}">
+                        <div class="list-main my-problem-main">
+                            <div class="main-top">
+                                <span class="main-top-text">
+                                    {{problem.name.substring(0, 70) + (problem.name.length > 70?'...':'')}}
+                                </span>
+                            </div>
+                            <div class="main-middle">
+                                <span class="date">
+                                    <span class="date-icon"></span>
+                                    {{problem.createDate | date:'dd/MM/yyyy'}}
+                                </span>
+                                <span class="people"><span class="people-icon"></span>
+                                    4
+                                </span>
+                                <span class="status status-green" data-ng-if="problem.status==='open'">
+                                    OPEN TO CROWD
+                                </span>
+                                <span class="status status-private" data-ng-if="problem.status==='private'">
+                                    PRIVATE
+                                </span>
+                                <span class="status status-closed" data-ng-if="problem.status==='closed'">
+                                    CLOSED
+                                </span>
+                            </div>
+                            <div class="main-bottom">
+                                <span class="bottom-text">
+                                    {{problem.description.substring(0, 150) + (problem.description.length > 150?'...':'')}}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mobile-answers my-problem-answers">
+                            <div class="mobile-answers-bg">
+                                <span class="answers-number">
+                                    {{problem.answers.length}}
+                                </span>
+                            </div>
+                            <span class="mobile-answers-text">
+                                answers
+                            </span>
+                        </div>
+                        <div class="list-edit">
+                            <div class="delete" data-ng-click="toggleDeleteModal(problem);$event.stopPropagation()">
+                                <div class="delete-icon"></div>
+                                <div class="delete-text">
+                                    Delete
+                                </div>
+                            </div>
+                            <div class="list-close" data-ng-click="toggleCloseModal(problem);$event.stopPropagation()">
+                                <div class="list-close-icon"></div>
+                                <div class="list-close-text">
+                                    Close
+                                </div>
+                            </div>
+                            <div class="access" data-ng-click="togglePublic(problem);$event.stopPropagation()">
+                                <div class="access-check" data-ng-class="{'swich-on': problem.status!=='private','swich-off': problem.status==='private'}">
+                                    <a href="">
+                                        <span></span>
+                                    </a>
+                                </div>
+                                <span class="access-text">
+                                    Crowd Access
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile my problem view end -->
+
+    <!-- desktop my problem page -->
+    <div class="desktop-view">
+        <div class="my-main-header hidden-mobile">
+            <div class="my-main-header-left">
+                <div class="showpage">
+                    Show
+                    <div class="select-page">
+                        <div class="btn-group" data-uib-dropdown data-is-open="status.isopen">
+                            <button id="single-button" type="button" class="" data-uib-dropdown-toggle>
+                                <span class="select-page-number">
+                                    {{itemsByPage}}
+                                </span>
+                                <span class="caret"></span>
+                            </button>
+                            <ul data-uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                                <li role="menuitem" data-ng-repeat="size in pageSizes" data-ng-click="changePageSize(size)">
+                                    <a href="javascript:;">{{size}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    per page
+                </div>
+            </div>
+            <div class="my-main-header-right">
+                <div class="table-controls">
+                    <div data-st-pagination="" data-st-items-by-page="itemsByPage" data-st-displayed-pages="3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- desktop table -->
+        <table class="desktop-table hidden-mobile">
+            <thead>
+                <tr class="desktop-table-header">
+                    <th data-st-sort="name" class="name my-problem-nametitle th-my-problem-name">
+                        <span class="have-pointer">Name</span>
+                        <span class="arrow"></span>
+                    </th>
+                    <th data-st-sort="description" class="description th-my-problem-description">
+                        <span class="have-pointer">Description</span>
+                        <span class="arrow"></span>
+                    </th>
+                    <th data-st-sort="createDate" class="creation th-my-problem-creation">
+                        <span class="have-pointer">Creation Date</span>
+                        <span class="arrow"></span>
+                    </th>
+                    <th data-st-sort="status" class="status th-my-problem-status">
+                        <span class="have-pointer">Status</span>
+                        <span class="arrow"></span>
+                    </th>
+                    <th data-st-sort="answers" class="th-my-problem-answers answers ">
+                        <span class="have-pointer">Answers</span>
+                        <span class="arrow"></span>
+                    </th>
+                    <th class="actions th-my-problem-actions">
+                        <span>Actions</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-row" data-ng-repeat="problem in problemList" data-ng-click="gotoProblemDetails(problem.id)" data-ng-show="isUserProblem(problem)">
+                    <td class="tb-name">
+                        <div class="my-problem-name" data-ng-class="{'border-none': !problem.technique||problem.technique==='regular', 'border-purple': problem.technique === 'brainstorming', 'border-red': problem.technique === 'teleportation', 'border-blue': problem.technique === 'exaggeration', 'border-yellow': problem.technique === 'superpowers'}">
+                            <span class="name-text">
+                                {{problem.name.substring(0, 70) + (problem.name.length > 70?'...':'')}}
+                            </span>
+                        </div>
+                    </td>
+                    <td class="tb-description">
+                        <span class="description-text">
+                            {{problem.description.substring(0, 150) + (problem.description.length > 150?'...':'')}}
+                        </span>
+                    </td>
+                    <td class="tb-creation">
+                        <span class="creation-text">{{problem.createDate | date:'dd/MM/yyyy'}}</span>
+                    </td>
+                    <td class="tb-status">
+                        <span class="status-text status-green" data-ng-if="problem.status==='open'">
+                            OPEN TO THE CROWD
+                        </span>
+                        <span class="status-text status-private" data-ng-if="problem.status==='private'">
+                            PRIVATE
+                        </span>
+                        <span class="status-text status-closed" data-ng-if="problem.status==='closed'">
+                            CLOSED
+                        </span>
+                    </td>
+                    <td class="tb-answers">
+                        <div class="answers-background" data-ng-click="gotoProblemDetails(problem.id)">
+                            <span class="answers-text">{{problem.answers.length}}</span>
+                        </div>
+                    </td>
+                    <td class="tb-actions tb-my-problem-actions">
+                        <div class="actions-group">
+                            <span class="actions-delete" data-ng-click="toggleDeleteModal(problem); $event.stopPropagation();"></span>
+                            <span class="actions-close" data-ng-click="toggleCloseModal(problem); $event.stopPropagation();"></span>
+                            <span class="actions-email"></span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- desktop my problem page view end -->
+
+<!-- my problem empty -->
+    <!-- empty desktop -->
+<div class="empty-duck" data-ng-if="!problemList.length">
+    <div class="my-empty hidden-mobile">
+        <div class="empty-duck"></div>
+        <span class="triangle">
+            <span class="sm-triangle"></span>
+        </span>
+        <div class="empty-content">
+            <span class="empty-text">Wow, looks like you don’t have any problems! But… if you do, click the plus sign to start a brainstorming session.</span>
+        </div>
+    </div>
+    <!-- empty mobile -->
+    <div class="mobile-my-empty visible-mobile" data-ng-if="!problemList.length">
+        <div class="mobile-empty-content">
+            <span class="mobile-empty-text">Wow, looks like you don’t have any problems! But… if you do, click the plus sign to start a brainstorming session.</span>
+        </div>
+        <div class="mobile-triangle-box">
+            <span class="mobile-triangle">
+                <span class="mobile-sm-triangle"></span>
+            </span>
+        </div>
+        <div class="mobile-empty-duck">
+
+        </div>
+    </div>
+</div>
+<!-- my problem empty end -->
+
+<!-- mobile everyone & my problem page footer -->
+<footer class="mobile-problem-footer visible-mobile">
+    <span class="add-new-problem" data-ng-click="toggleCreateModal()">+</span>
+</footer>
+<!-- modal view -->
+<div data-ng-include="'./partials/close.modal.html'" data-ng-if="showCloseModal"></div>
+<div data-ng-include="'./partials/delete.modal.html'" data-ng-if="showDeleteModal"></div>
+<div data-ng-include="'./partials/create.problem.modal.html'" data-ng-if="showCreateModal"></div>

@@ -1,0 +1,203 @@
+<div class="content" data-st-table="problemList" data-st-safe-src="displayedProblemList">
+    <!-- mobile everyone problem header -->
+    <div class="mobile-header visible-mobile">
+        <span class="mobile-header-title">
+            DASHBOARD
+        </span>
+        <span class="mobile-search-icon" data-ng-click="showSearch=!showSearch" data-ng-hide="showSearch"></span>
+        <input data-ng-model="searchInput" data-ng-change="searchData(searchInput)" type="text" class="mobile-search" placeholder="Search..." data-ng-show="showSearch">
+        <span class="mobile-search-icon open" data-ng-show="showSearch" data-ng-click="showSearch=!showSearch"></span>
+        <div class="mobile-nav visible-mobile">
+            <ul>
+                <li class="mobile-my-problem">
+                    <a data-ui-sref="home.my" href="javascript:;">My Problems</a>
+                </li>
+                <li class="mobile-ever-problem active">
+                    <a data-ui-sref="home.everyone" href="javascript:;">Everyone's Problems</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- desktop everyone page header -->
+    <div class="my-main-header hidden-mobile">
+        <div class="my-main-header-left">
+            <div class="showpage">
+                Show
+                <div class="select-page">
+                    <div class="btn-group" data-uib-dropdown data-is-open="status.isopen">
+                      <button id="single-button" type="button" class="" data-uib-dropdown-toggle>
+                         <span class="select-page-number">
+                                {{itemsByPage}}
+                         </span>
+                         <span class="caret"></span>
+                      </button>
+                      <ul data-uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                         <li role="menuitem" data-ng-repeat="size in pageSizes" data-ng-click="changePageSize(size)">
+                             <a href="javascript:;">{{size}}</a>
+                         </li>
+                      </ul>
+                    </div>
+                </div>
+                per page
+            </div>
+        </div>
+        <div class="my-main-header-right">
+            <div class="table-controls">
+                <div data-st-pagination="" data-st-items-by-page="itemsByPage" data-st-displayed-pages="2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- desktop table -->
+    <table class="desktop-table hidden-mobile">
+        <thead>
+            <tr class="desktop-table-header">
+                <th class="user" data-st-sort="username">
+                    <span class="have-pointer">
+                        User
+                    </span>
+                    <span class="arrow"></span>
+                </th>
+                <th class="name" data-st-sort="name">
+                    <span class="have-pointer">
+                        Name
+                    </span>
+                    <span class="arrow"></span>
+                </th>
+                <th class="description" data-st-sort="description">
+                    <span class="have-pointer">
+                        Description
+                    </span>
+                    <span class="arrow"></span>
+                </th>
+                <th class="creation" data-st-sort="createDate">
+                    <span class="have-pointer">
+                        Creation Date
+                    </span>
+                    <span class="arrow"></span>
+                </th>
+                <th class="status" data-st-sort="status">
+                    <span class="have-pointer">
+                        Status
+                    </span>
+                    <span class="arrow"></span>
+                </th>
+                <th class="answers  answers-auto" data-st-sort="answers">
+                    <span class="have-pointer">
+                        Answers
+                    </span>
+                    <span class="arrow"></span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-row" data-ng-repeat="problem in problemList" data-ng-click="gotoProblemDetails(problem.id)">
+                <td>
+                    <div class="tb-user border-none">
+                        <div class="user-img">
+                            <img src="/" data-ng-src="../i/src/person.png" alt>
+                        </div>
+                        <span class="user-name">
+                            {{problem.username}}
+                        </span>
+                    </div>
+                </td>
+                <td class="tb-name">
+                    <span class="name-text">
+                        {{problem.name.substring(0, 70) + (problem.name.length > 70?'...':'')}}
+                    </span>
+                </td>
+                <td class="tb-description">
+                    <span class="description-text">
+                       {{problem.description.substring(0, 150) + (problem.description.length > 150?'...':'')}}
+                   </span>
+                </td>
+                <td class="tb-creation">
+                    <span class="creation-text">{{problem.createDate | date:'dd/MM/yyyy'}}</span>
+                </td>
+                <td class="tb-status">
+                    <span class="status-text status-green" data-ng-if="problem.status==='open'">
+                       OPEN TO THE CROWD
+                    </span>
+                    <span class="status-text status-private" data-ng-if="problem.status==='private'">
+                       PRIVATE
+                    </span>
+                    <span class="status-text status-closed" data-ng-if="problem.status==='closed'">
+                       CLOSED
+                    </span>
+                </td>
+                <td class="tb-answers">
+                    <div class="answers-background">
+                        <span class="answers-text">
+                            {{problem.answers.length}}
+                        </span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- mobile table -->
+    <div class="mobile-table visible-mobile">
+        <div class="problem-item" data-ng-repeat="problem in displayedProblemList" data-ng-click="gotoProblemDetails(problem.id)" data-ng-show="problem.status==='open'">
+            <div class="mobile-border-none"></div>
+            <div class="mobile-list">
+                <div class="list-content">
+                    <div class="mobile-user">
+                        <div class="mobile-user-img">
+                            <img src="../i/src/person.png" alt>
+                        </div>
+                        <span class="mobile-user-name">
+                            {{problem.username}}
+                        </span>
+                    </div>
+                    <div class="list-main">
+                        <div class="main-top">
+                            <span class="main-top-text">
+                                {{problem.name.substring(0, 70) + (problem.name.length > 70?'...':'')}}
+                            </span>
+                        </div>
+                        <div class="main-middle">
+                            <span class="date">
+                                <span class="date-icon"></span>
+                                {{problem.createDate | date:'dd/MM/yyyy'}}
+                            </span>
+                            <span class="people">
+                                <span class="people-icon"></span>
+                                4
+                            </span>
+                            <span class="status active" data-ng-if="problem.status==='open'">
+                                active
+                            </span>
+                            <span class="status status-private" data-ng-if="problem.status==='private'">
+                                private
+                            </span>
+                            <span class="status status-closed" data-ng-if="problem.status==='closed'">
+                                closed
+                            </span>
+                        </div>
+                        <div class="main-bottom">
+                            <span class="bottom-text">
+                                {{problem.description.substring(0, 150) + (problem.description.length > 150?'...':'')}}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mobile-answers">
+                        <div class="mobile-answers-bg">
+                            <span class="answers-number">
+                                {{problem.answers.length}}
+                            </span>
+                        </div>
+                        <span class="mobile-answers-text">
+                            answers
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- mobile everyone & my problem page footer -->
+<footer class="mobile-problem-footer visible-mobile">
+    <span class="add-new-problem" data-ng-click="toggleCreateModal()">+</span>
+</footer>
+<!-- modal view -->
+<div data-ng-include="'./partials/create.problem.modal.html'" data-ng-if="showCreateModal"></div>

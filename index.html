@@ -1,0 +1,44 @@
+<!doctype html>
+<html data-ng-app="App">
+<head>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- CSS Style -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/screen.css" rel="stylesheet" type="text/css">
+
+    <title>QUICK QUACK</title>
+
+    <script src="js/lib/jquery/dist/jquery.min.js"></script>
+    <script src="js/lib/jquery-ui/jquery-ui.js"></script>
+    <script src="js/lib/Sortable/Sortable.min.js"></script>
+    <script src="js/lib/angular/angular.min.js"></script>
+    <script src="js/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="js/lib/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="js/lib/angular-resource/angular-resource.min.js"></script>
+    <script src="js/lib/angular-off-click/offClick.js"></script>
+    <script src="js/lib/angular-smart-table/dist/smart-table.min.js"></script>
+    <script src="js/lib/Sortable/ng-sortable.js"></script>
+    <script src="js/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="js/lib/angular-touch/angular-touch.min.js"></script>
+
+    <script src="js/services.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body data-ng-controller="appCtrl">
+
+<header class="header" data-ng-include="'partials/header.html'" data-ng-if="!isLoginView()"></header>
+<!--End header-->
+
+<main class="view-frame" data-ui-view></main>
+<!-- End .view-frame -->
+
+<footer class="hidden-mobile footer" data-ng-if="!isLoginView()">
+    <span class="footer-text">© IBM Corporation 2016. All Right Reserved.</span>
+</footer>
+</body>
+</html>

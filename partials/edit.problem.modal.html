@@ -1,0 +1,30 @@
+<div class="backdrop">
+    <!-- edit problem modal -->
+    <div class="modal-box">
+        <div class="modal-box-header">
+            <span class="modal-box-title">Edit Problem</span>
+            <span class="close-icon" data-ng-click="toggleEditModal()"></span>
+        </div>
+        <div class="modal-box-content edit-problem-box">
+            <div class="new-problem new-problem-modal">
+                <div class="new-problem-header">
+                    <div>
+                        <div class="new-problem-name modal-new-problem-text">
+                            <span class="modal-new-problem-name-text ">Give your problem a name</span>
+                            <span class="duck modal-duck"></span>
+                            <input type="text" class="new-problem-name-input modal-input" data-ng-model="tmpSaveProblem.name">
+                        </div>
+                        <div class="new-problem-description modal-new-problem-text">
+                            <span class="modal-new-problem-name-text">Now give a short description</span>
+                            <textarea rows="3" cols="20" class="short-description-input modal-input" data-ng-model="tmpSaveProblem.description"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-box-footer">
+            <span class="no" data-ng-click="toggleEditModal()">Cancel</span>
+            <span class="yes" data-ng-click="edit()">Save</span>
+        </div>
+    </div>
+</div>

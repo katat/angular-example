@@ -1,0 +1,582 @@
+<div>
+    <!-- mobile style -->
+    <div class="visible-mobile">
+        <!-- mobile problem detail page header -->
+        <div class="mobile-detail-header visible-mobile">
+            <span class="mobile-back" data-ng-click="goback()"></span>
+            <span class="mobile-detail-header-text">
+                PROBLEM DETAILS
+            </span>
+        </div>
+        <!-- mobile problem page dropdown  panel -->
+        <div class="detail-dowpdown visible-mobile" data-ng-if="problemDetails.technique==='regular'||!problemDetails.technique">
+            <div class="detail-dowpdown-header visible-mobile">
+                <span class="dowpdown-icon" data-ng-class="{'icon-open': showMenu}" data-ng-click="showMenu=!showMenu"></span>
+            </div>
+            <div class="detail-dowpdown-content" data-ng-class="{open: showMenu}">
+                <div class="mobile-detail-problem">
+                    <span class="problem-title">
+                        Problem:
+                    </span>
+                    <span class="problem-text">
+                        {{problemDetails.name}}
+                    </span>
+                </div>
+                <div class="mobile-detail-description">
+                    <span class="description-title">
+                        Description:
+                    </span>
+                    <span class="description-text">
+                        {{problemDetails.description}}
+                    </span>
+                </div>
+                <div class="mobile-detail-dowpdown-footer">
+                    <span class="detail-dowpdown-edit" data-ng-click="toggleEditModal()">
+                        <span class="sm-edit-icon"></span>
+                        <span class="sm-edit-text">Edit</span>
+                    </span>
+                    <span class="detail-dowpdown-close" data-ng-click="toggleCloseModal()">
+                        <span class="sm-close-icon"></span>
+                        <span class="sm-close-text">Close</span>
+                    </span>
+                    <span class="detail-dowpdown-delete" data-ng-click="toggleDeleteModal()">
+                        <span class="sm-delete-icon"></span>
+                        <span class="sm-delete-text">Delete</span>
+                    </span>
+                    <span class="detail-dowpdown-email">
+                        <span class="sm-email-icon"></span>
+                        <span class="sm-email-text">Email</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- mobile need help line -->
+        <div class="mobile-need-help" data-ng-if="problemDetails.technique==='regular'||!problemDetails.technique">
+            <div class="header-line">
+                <span class="subtitle">
+                    NEED HELP?
+                </span>
+            </div>
+            <div class="mobile-need-help-content">
+                <div class="bring-crowd">
+                    <span class="bring-crowd-text">
+                        Bring in the crowd
+                    </span>
+                    <a href="javascript:;" class="bring-crowd-check" data-ng-click="togglePublic()" data-ng-class="{'crowd-nocheck': problemDetails.status === 'private'}">
+                        <span class="bring-crowd-icon"></span>
+                    </a>
+                </div>
+                <button class="showtech-btn" data-ng-click="showTechniques()">
+                    <span class="showtech-icon"></span>
+                    Show techniques
+                </button>
+            </div>
+        </div>
+        <!-- mobile technique mode view -->
+        <div class="mobile-brainstom">
+            <div class="mobile-brainstom-blue" data-ng-if="techniques[slideIndex] === 'exaggeration'">
+                <div class="mobile-brainstom-header-blue">
+                    <span class="mobile-brainstom-title">
+                        <span class="mobile-brainstom-blue-icon"></span>
+                        Exaggeration
+                    </span>
+                    <span class="mobile-brainstom-prev" data-ng-click="prevSlide()"></span>
+                    <span class="mobile-brainstom-next" data-ng-click="nextSlide()"></span>
+                </div>
+                <div class="mobile-brainstom-content">
+                    <span class="mobile-brainstom-content-text">
+                        What if your problems were 10 times its current size? 100 times?
+                    </span>
+                    <span class="mobile-brainstom-content-text">
+                        What if it were 1/10th or 1/100th the size?
+                    </span>
+                    <span class="mobile-brainstom-content-title">
+                        Current Problem
+                    </span>
+                    <span class="mobile-brainstom-content-text">
+                        Lorem ipsum dolor sit amet name
+                    </span>
+                </div>
+            </div>
+            <div class="mobile-brainstom-yellow" data-ng-if="techniques[slideIndex] === 'superpowers'">
+                <div class="mobile-brainstom-header-yellow">
+                    <span class="mobile-brainstom-title text-black">
+                        <span class="mobile-brainstom-yellow-icon"></span>
+                        Superpowers
+                    </span>
+                    <span class="mobile-brainstom-prev-black" data-ng-click="prevSlide()"></span>
+                    <span class="mobile-brainstom-next-black" data-ng-click="nextSlide()"></span>
+                </div>
+                <div class="mobile-brainstom-content">
+                    <span class="mobile-brainstom-content-text">
+                        If you had superpowers, what would change?
+                    </span>
+                    <span class="mobile-brainstom-content-text">
+                        If you were Superman? The Hulk? Spiderman?
+                    </span>
+                    <span class="mobile-brainstom-content-title">
+                        Current Problem
+                    </span>
+                    <span class="mobile-brainstom-content-text">
+                        Lorem ipsum dolor sit amet name
+                    </span>
+                </div>
+            </div>
+            <div class="mobile-brainstom-purple" data-ng-if="techniques[slideIndex] === 'brainstorming'">
+                <div class="mobile-brainstom-header-purple">
+                    <span class="mobile-brainstom-title">
+                        <span class="mobile-brainstom-purple-icon"></span>
+                        Reverse Brainstorming
+                    </span>
+                    <span class="mobile-brainstom-prev" data-ng-click="prevSlide()"></span>
+                    <span class="mobile-brainstom-next" data-ng-click="nextSlide()"></span>
+                </div>
+                <div class="mobile-brainstom-content">
+                    <span class="mobile-brainstom-content-text">
+                        Take your problem statement, and state it in the reverse.  How would you solve *that* problem?
+                    </span>
+                    <span class="mobile-brainstom-content-text">
+                        Now, reverse those solutions, and see how they might address your original problem statement.
+                    </span>
+                    <span class="mobile-brainstom-content-title">
+                        Current Problem
+                    </span>
+                    <span class="mobile-brainstom-content-text">
+                        Lorem ipsum dolor sit amet name
+                    </span>
+                </div>
+            </div>
+            <div class="mobile-brainstom-red" data-ng-if="techniques[slideIndex] === 'teleportation'">
+                <div class="mobile-brainstom-header-red">
+                    <span class="mobile-brainstom-title">
+                        <span class="mobile-brainstom-red-icon"></span>
+                        Teleportation
+                    </span>
+                    <span class="mobile-brainstom-prev" data-ng-click="prevSlide()"></span>
+                    <span class="mobile-brainstom-next" data-ng-click="nextSlide()"></span>
+                </div>
+                <div class="mobile-brainstom-content">
+                    <span class="mobile-brainstom-content-text">
+                        What if you were solving this problem 20 years in the future?  How might you address the problem, given the absence of barriers that you run into today?
+                    </span>
+                    <span class="mobile-brainstom-content-title">
+                        Current Problem
+                    </span>
+                    <span class="mobile-brainstom-content-text">
+                        Lorem ipsum dolor sit amet name
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="header-line">
+            <span class="subtitle">
+                ANSWERS({{problemDetails.answers.length}})
+            </span>
+        </div>
+    </div>
+    <!-- mobile detail content -->
+    <div class="visible-mobile" data-ng-sortable="{animation: 300, handle: '.drag', draggable: '.sortable'}">
+        <div class="answer-item" data-ng-class="{demoted: answer.demote, sortable: !answer.demote}" data-ng-repeat="answer in problemDetails.answers" data-ng-swipe-left="toggleOptions()" data-ng-swipe-right="toggleOptions()" data-ng-show="filterAnswers(answer)">
+            <div data-ng-class="{'mobile-border-none': !answer.technique, 'mobile-border-purple': answer.technique === 'brainstorming', 'mobile-border-red': answer.technique === 'teleportation', 'mobile-border-blue': answer.technique === 'exaggeration', 'mobile-border-yellow': answer.technique === 'superpowers'}" class="mobile-border-sm" ></div>
+            <div class="mobile-list mobile-list-sm">
+                <div class="list-content" data-ng-class="{'detail-left': showOptions}">
+                    <div class="mobile-user">
+                        <div class="mobile-user-img">
+                            <img src="../i/src/person.png" alt>
+                        </div>
+                    </div>
+                    <div class="list-main detail-list-main" data-ng-class="{'mobile-tech-list-main':problemDetails.technique!=='regular'&&problemDetails.technique}">
+                        <div class="main-top">
+                            <span class="mobile-detail-main-top-text">
+                                {{answer.username}}
+                                <span class="point"></span>
+                                {{answer.date | date : 'dd/MM/yyyy'}}
+                            </span>
+                        </div>
+                        <div class="mobile-problem-detail-text">
+                            <span>
+                                {{answer.description.substring(0, 60) + (answer.description.length>60?'...':'')}}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="include-btn-box" data-ng-if="problemDetails.technique!=='regular'&&problemDetails.technique">
+                        <button class="include-btn" data-ng-class="{'include-btn-checked':answer.included, 'include-btn-nochecked':!answer.included}"  data-ng-click="include(answer)">
+                            <span class="nochecked">
+                                Include
+                            </span>
+                            <span class="checked">
+                                Included
+                            </span>
+                        </button>
+                    </div>
+                    <div class="drag" data-ng-hide="answer.demote">
+                        <span class="drag-icon"></span>
+                    </div>
+                    <div class="list-edit list-edit-sm">
+                        <div class="delete" data-ng-click="toggleDeleteAnswerModal()">
+                            <div class="delete-icon"></div>
+                            <div class="delete-text">
+                                Delete
+                            </div>
+                        </div>
+                        <div class="access" data-ng-click="demote(answer);toggleOptions()">
+                            <div class="detail-demote-icon"></div>
+                            <div class="detail-demote-text">
+                                Demote
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- disktop style -->
+<div class="problem-detail-header hidden-mobile">
+    <a href="javascript:;" class="back" data-ng-click="goback()">
+        <span class="back-icon"></span>
+        <span>Back</span>
+    </a>
+    <!-- desktop problem detail page header -->
+    <div class="header-discription">
+        <div class="header-description-title">
+            <span class="title-text">
+                {{problemDetails.name}}
+            </span>
+            <div class="description-btn-group">
+                <div class="description-btn-edit" data-ng-click="toggleEditModal()">
+                    <span class="edit-icon"></span>
+                    <span class="edit-text">
+                        Edit
+                    </span>
+                </div>
+                <div class="description-btn-close" data-ng-click="toggleCloseModal()">
+                    <span class="close-icon"></span>
+                    <span class="close-text">
+                        Close
+                    </span>
+                </div>
+                <div class="description-btn-delete" data-ng-click="toggleDeleteModal()">
+                    <span class="delete-icon"></span>
+                    <span class="delete-text">
+                        Delete
+                    </span>
+                </div>
+                <div class="description-btn-email">
+                    <span class="email-icon"></span>
+                    <span class="email-text">
+                        Email
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="header-description-content">
+            <span class="description-content-text">
+                    {{problemDetails.description}}
+                </span>
+        </div>
+    </div>
+    <!-- desktop brainstom -->
+    <div class="tech-panel">
+        <div class="brainstom-blue" data-ng-if="techniques[slideIndex] === 'exaggeration'">
+            <div class="brainstom-title">
+                <span class="brainstom-blue-icon"></span>
+                <span class="brainstom-title-text">
+                    EXAGGERATION
+                </span>
+            </div>
+            <div class="brainstom-content">
+                <span class="brainstom-content-top">
+                    What if your problem were 10 times its current size?  100 times?
+                </span>
+                <span class="brainstom-content-bottom">
+                    What if it were 1/10th or 1/100th the size?
+                </span>
+            </div>
+            <div class="brainstom-prev-btn" data-ng-click="prevSlide()">
+                <span class="prev-icon"></span>
+                <span class="prev-text">
+                    Prev
+                </span>
+            </div>
+            <div class="brainstom-next-btn" data-ng-click="nextSlide()">
+                <span class="next-icon"></span>
+                <span class="prev-text">
+                    Next
+                </span>
+            </div>
+        </div>
+        <div class="brainstom-yellow" data-ng-if="techniques[slideIndex] === 'superpowers'">
+            <div class="brainstom-title">
+                <span class="brainstom-yellow-icon"></span>
+                <span class="brainstom-title-text text-black">
+                    SUPERPOWERS
+                </span>
+            </div>
+            <div class="brainstom-content">
+                <span class="brainstom-content-top text-black">
+                    If you had superpowers, what would change?
+                </span>
+                <span class="brainstom-content-bottom text-black">
+                    If you were Superman? The Hulk? Spiderman?
+                </span>
+            </div>
+            <div class="brainstom-prev-btn" data-ng-click="prevSlide()">
+                <span class="prev-icon"></span>
+                <span class="prev-text text-black">
+                    Prev
+                </span>
+            </div>
+            <div class="brainstom-next-btn" data-ng-click="nextSlide()">
+                <span class="next-icon"></span>
+                <span class="prev-text text-black">
+                    Next
+                </span>
+            </div>
+        </div>
+        <div class="brainstom-red" data-ng-if="techniques[slideIndex] === 'teleportation'">
+            <div class="brainstom-title">
+                <span class="brainstom-red-icon"></span>
+                <span class="brainstom-title-text ">
+                    TELEPORTATION
+                </span>
+            </div>
+            <div class="brainstom-content">
+                <span class="brainstom-content-top">
+                    What if you were solving this problem 20 years in the future?
+                </span>
+                <span class="brainstom-content-bottom ">
+                    How might you address the problem, given the absence of barriers that you run into today?
+                </span>
+            </div>
+            <div class="brainstom-prev-btn" data-ng-click="prevSlide()">
+                <span class="prev-icon"></span>
+                <span class="prev-text">
+                    Prev
+                </span>
+            </div>
+            <div class="brainstom-next-btn" data-ng-click="nextSlide()">
+                <span class="next-icon"></span>
+                <span class="prev-text">
+                    Next
+                </span>
+            </div>
+        </div>
+        <div class="brainstom-purple" data-ng-if="techniques[slideIndex] === 'brainstorming'">
+            <div class="brainstom-title">
+                <span class="brainstom-purple-icon"></span>
+                <span class="brainstom-title-text ">
+                    REVERSE BRAINSTORMIMG
+                </span>
+            </div>
+            <div class="brainstom-content">
+                <span class="brainstom-content-top">
+                    Take your problem statement, and state it in the reverse.  How would you solve *that* problem?
+                </span>
+                <span class="brainstom-content-bottom ">
+                    Now, reverse those solutions, and see how they might address your original problem statement.
+                </span>
+            </div>
+            <div class="brainstom-prev-btn" data-ng-click="prevSlide()">
+                <span class="prev-icon"></span>
+                <span class="prev-text">
+                    Prev
+                </span>
+            </div>
+            <div class="brainstom-next-btn" data-ng-click="nextSlide()">
+                <span class="next-icon"></span>
+                <span class="prev-text">
+                    Next
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- desktop need help?  -->
+    <div class="needhelp" data-ng-if="(problemDetails.technique==='regular'||!problemDetails.technique)">
+        <div class="needhelp-title">
+            <span class="needhelp-title-text">
+                Need help?
+            </span>
+        </div>
+        <div class="bring-crowd">
+            <span class="bring-crowd-text">
+                Bring in the crowd
+            </span>
+            <a href="javascript:;" class="bring-crowd-check"  data-ng-click="togglePublic()" data-ng-class="{'crowd-nocheck': problemDetails.status==='private'}">
+                <span class="bring-crowd-icon"></span>
+            </a>
+        </div>
+        <button class="showtech-btn" data-ng-click="showTechniques()">
+            <span class="showtech-icon"></span>
+            Show techniques
+        </button>
+    </div>
+    <div class="type-answer">
+        <input type="text" name="answer" class="type-answer-input" placeholder="Type answer..." data-ng-model="answerInput">
+        <div class="btn-box">
+            <span class="say"></span>
+            <button class="add-answer-btn" data-ng-click="addAnswer()">
+                Add
+            </button>
+        </div>
+    </div>
+</div>
+<!-- decktop problem detail table -->
+<table class="desktop-table hidden-mobile" data-ng-if="!problemDetails.technique || problemDetails.technique === 'regular'" data-ng-show="problemDetails.answers.length">
+    <thead>
+        <tr class="desktop-table-header">
+            <th class="user problem-detail-user">
+                User
+                <span class="arrow"></span>
+            </th>
+            <th class="date problem-detail-date">
+                Date
+                <span class="arrow"></span>
+            </th>
+            <th class="answers problem-detail-answers">
+                Answer
+                <span class="arrow"></span>
+            </th>
+            <th class="tech problem-detail-tech">
+                Tech
+                <span class="arrow"></span>
+            </th>
+            <th class="actions problem-detail-actions">
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody data-ng-sortable="{animation: 300, handle: '.actions-more', draggable: '.sortable'}">
+        <tr class="table-row" data-ng-repeat="answer in getProblemDetails().answers"  data-ng-show="filterAnswers(answer)" data-ng-class="{sortable:!answer.demote}">
+            <td>
+                <div class="tb-user" data-ng-class="{'border-none': !answer.technique, 'border-purple': answer.technique === 'brainstorming', 'border-red': answer.technique === 'teleportation', 'border-blue': answer.technique === 'exaggeration', 'border-yellow': answer.technique === 'superpowers'}">
+                    <div class="user-img">
+                        <img src="/" data-ng-src="{{answer.thumbnail}}" data-ng-class="{'demoted': answer.demote}" alt>
+                    </div>
+                    <span class="user-name">
+                        {{answer.username}}
+                    </span>
+                </div>
+            </td>
+            <td class="tb-creation" data-ng-class="{'demoted': answer.demote}">
+                <span class="creation-text">
+                    {{answer.date | date:'dd/MM/yyyy'}}
+                </span>
+            </td>
+            <td class="tb-description" data-ng-class="{'demoted': answer.demote}">
+                <span class="description-text">
+                   {{answer.description}}
+                </span>
+            </td>
+            <td class="tb-tech" data-ng-class="{'demoted': answer.demote}">
+                <span class="tech-text tech-red" data-ng-if="answer.technique==='teleportation'">
+                       Teleportation
+                   </span>
+                <span class="tech-text tech-blue" data-ng-if="answer.technique==='exaggeration'">
+                       Exaggeration
+                   </span>
+                <span class="tech-text tech-yellow" data-ng-if="answer.technique==='superpowers'">
+                       Superpowers
+                   </span>
+                <span class="tech-text tech-purple" data-ng-if="answer.technique==='brainstorming'">
+                       Reverse Brainstorming
+                   </span>
+            </td>
+            <td class="tb-actions" data-ng-class="{'demoted': answer.demote}">
+                <div class="actions-group">
+                    <span class="actions-delete" data-ng-click="toggleDeleteAnswerModal()"></span>
+                    <span class="actions-demote" data-ng-click="demote(answer)"></span>
+                    <span class="actions-more"></span>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- decktop problem detail table in brainstom view -->
+<table class="desktop-table hidden-mobile" data-ng-if="problemDetails.technique&&problemDetails.technique!=='regular'">
+    <thead>
+        <tr class="desktop-table-header">
+            <th class="user brainstorming-user">
+                User
+                <span class="arrow"></span>
+            </th>
+            <th class="date brainstorming-date">
+                Date
+                <span class="arrow"></span>
+            </th>
+            <th class="answers brainstorming-answers">
+                Answer
+                <span class="arrow"></span>
+            </th>
+            <th class="actions brainstorming-actions">
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody data-ng-sortable="{animation: 300, handle: '.actions-more', draggable: '.sortable'}">
+        <tr class="table-row" data-ng-repeat="answer in getProblemDetails().answers" data-ng-show="showInTechnique(answer)" data-ng-class="{'demoted': answer.demote, 'sortable': !answer.demote}">
+            <td>
+                <div class="tb-user" data-ng-class="{'border-none': !answer.technique, 'border-purple': answer.technique === 'brainstorming', 'border-red': answer.technique === 'teleportation', 'border-blue': answer.technique === 'exaggeration', 'border-yellow': answer.technique === 'superpowers'}">
+                    <div class="user-img">
+                        <img src="/" data-ng-src="{{answer.thumbnail}}" alt>
+                    </div>
+                    <span class="user-name">
+                        {{answer.username}}
+                    </span>
+                </div>
+            </td>
+            <td class="tb-creation">
+                <span class="creation-text">
+                    {{answer.date | date:'dd/MM/yyyy'}}
+                </span>
+            </td>
+            <td class="tb-description tb-brainstorming-answers">
+                <span class="description-text">
+                       <span class="tech-text tech-red" data-ng-if="answer.technique==='teleportation'">
+                           Teleportation
+                       </span>
+                <span class="tech-text tech-blue" data-ng-if="answer.technique==='exaggeration'">
+                           Exaggeration
+                       </span>
+                <span class="tech-text tech-yellow" data-ng-if="answer.technique==='superpowers'">
+                           Superpowers
+                       </span>
+                <span class="tech-text tech-purple" data-ng-if="answer.technique==='brainstorming'">
+                           Reverse Brainstorming
+                       </span>
+                <span class="another-line">
+                        {{answer.description}}
+                    </span>
+                </span>
+            </td>
+            <td class="tb-actions">
+                <div class="actions-group">
+                    <span class="actions-delete" data-ng-click="toggleDeleteAnswerModal($index)"></span>
+                    <span class="actions-demote brainstorming-demote" data-ng-click="demote(answer)"></span>
+                    <span class="actions-more"></span>
+                </div>
+                <button class="include-btn" data-ng-class="{'include-btn-checked':answer.included, 'include-btn-nochecked':!answer.included}" data-ng-click="include(answer)">
+                    <span class="nochecked">
+                        Include
+                    </span>
+                    <span class="checked">
+                        Included
+                    </span>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- mobile problem detail footer -->
+<footer class="mobile-detail-footer visible-mobile" data-ng-click="toggleCreateAnswerModal()">
+    <span class="mobile-detail-footer-icon"></span>
+    <span class="mobile-detail-footer-text">
+        Add Answer
+    </span>
+</footer>
+<!-- modal view -->
+<div data-ng-include="'./partials/edit.problem.modal.html'" data-ng-if="showEditModal"></div>
+<div data-ng-include="'./partials/close.modal.html'" data-ng-if="showCloseModal"></div>
+<div data-ng-include="'./partials/delete.modal.html'" data-ng-if="showDeleteModal"></div>
+<div data-ng-include="'./partials/delete.answer.modal.html'" data-ng-if="showDeleteAnswerModal"></div>
+<div data-ng-include="'./partials/create.answer.modal.html'" data-ng-if="showCreateAnswerModal"></div>

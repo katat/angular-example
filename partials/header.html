@@ -1,0 +1,45 @@
+<!-- top header -->
+<div class="desktop-header hidden-mobile">
+    <div class="logo" data-ui-sref="home.my">
+    </div>
+    <div class="header-user">
+        <div class="header-userimg">
+            <img src="../i/src/userimg.png" alt>
+        </div>
+        <div class="right-text">
+            <span class="user-name">Christina Smith</span>
+            <a data-ui-sref="login" class="logout">Logout</a>
+        </div>
+    </div>
+    <div class="desktop-search">
+        <input data-ng-model="search.searchInput" data-ng-change="searchData(search.searchInput)" class="desktop-search-input" placeholder="Search...">
+        <span class="desktop-search-icon"></span>
+    </div>
+</div>
+<!-- desktop nav bar -->
+<nav class="hidden-mobile">
+    <div class="desktop-nav">
+        <div class="problems">
+            <ul>
+                <li><a data-ui-sref="home.my" class="myproblem" data-ng-class="getNavClass(['home.my','home.myProblemDetails','newProblem'])"> My Problems</a></li>
+                <li><a data-ui-sref="home.everyone" class="everproblem" data-ng-class="getNavClass(['home.everyone','home.otherProblemDetails'])">Everyone's Problems</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a data-ng-click="filterProblems()" data-ng-class="getStatusClass()">All</a></li>
+                <li><a data-ng-click="filterProblems('open')" data-ng-class="getStatusClass('open')">Open</a></li>
+                <li><a data-ng-click="filterProblems('closed')" data-ng-class="getStatusClass('closed')">Closed</a></li>
+                <li><a data-ng-click="filterProblems('starred')" data-ng-class="getStatusClass('starred')">Starred</a></li>
+            </ul>
+        </div>
+        <div class="nav-btn" data-ng-click="gotoNewProblem()">
+            <button class="btn-icon">
+                <span class="hover-button">
+                    <span class="hover-btn-icon"></span>
+                    <span class="hover-btn-text">Problem</span>
+                </span>
+            </button>
+        </div>
+    </div>
+</nav>

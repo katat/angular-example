@@ -1,0 +1,21 @@
+<div class="new-problem">
+    <!-- create problem view -->
+    <div class="new-problem-header">
+        <span class="new-problem-title">Create New Problem</span>
+        <div>
+            <div class="new-problem-name">
+                <span class="new-problem-name-text">Give your problem a name</span>
+                <span class="duck"></span>
+                <input type="text" class="new-problem-name-input" data-ng-model="problemName">
+            </div>
+            <div class="new-problem-description">
+                <span class="short-description-text">Now give a short description</span>
+                <textarea rows="3" cols="20" class="short-description-input" data-ng-model="description"></textarea>
+            </div>
+            <div class="new-problem-footer">
+                <button class="cancel" data-ng-click="cancel()">Cancel</button>
+                <button class="create" data-ng-click="addNewProblem()">Create</button>
+            </div>
+        </div>
+    </div>
+</div>

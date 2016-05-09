@@ -1,0 +1,1125 @@
+[
+    {
+        "id": 1,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": null,
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }, {
+            "username": "Keith Shales",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "superpowers"
+        }, {
+            "username": "Dana Boyle",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "brainstorming"
+        }, {
+            "username": "Dana Boyle",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-11-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "brainstorming"
+        }]
+    },{
+        "id": 2,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "private",
+        "public": true,
+        "technique": "teleportation",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 3,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "closed",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 4,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "superpowers",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 4,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 5,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 6,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 7,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 8,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 9,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 10,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 11,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 12,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 13,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 14,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 15,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 16,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 17,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 18,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 19,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 20,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 21,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 22,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 23,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 24,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 25,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 26,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 27,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 28,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 29,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 30,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 31,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 32,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 33,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 34,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 35,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 36,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 37,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 38,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 39,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 40,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 41,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 42,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 43,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 44,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    },{
+        "id": 45,
+        "username": "Dana Boyle",
+        "thumbnail": "./i/src/person.png",
+        "name": "Lorem ipsum problem name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+        "createDate": "2015-11-10",
+        "status": "open",
+        "public": true,
+        "technique": "brainstorming",
+        "answers": [{
+            "username": "Jane Smith",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "teleportation",
+            "included": true
+        }, {
+            "username": "Chad Pritt",
+            "thumbnail": "../i/src/person.png",
+            "date": "2015-10-11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore.",
+            "technique": "exaggeration"
+        }]
+    }
+]

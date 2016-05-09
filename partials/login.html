@@ -1,0 +1,41 @@
+<!-- login view -->
+<div class="login-page">
+    <div class="login">
+        <div class="login-header">
+            <span class="ibm-logo"></span>
+        </div>
+        <div class="login-content">
+            <div class="login-content-logo">
+                <span class="login-logo"></span>
+            </div>
+            <form class="login-input">
+                <div class="error-text" data-ng-class="{show: hasError}">
+                    <span class="try-again">Invalid username or password, please try again.</span>
+                </div>
+                <div class="login-user-box">
+                    <span class="login-user-icon"></span>
+                    <input data-ng-class="{error: usernameError}" data-ng-model="username" type="text" class="login-username" placeholder="Username">
+                </div>
+                <div class="login-password-box">
+                    <span class="login-password-icon"></span>
+                    <input data-ng-class="{error: pwdError}" data-ng-model="password" type="password" class="login-password" placeholder="Password">
+                </div>
+            </form>
+            <div class="content-footer">
+                <div class="login-footer-left" data-ng-click="remember=!remember">
+                    <span class="remember-me"></span><span class="rmb-me" data-ng-class="{'remember-yes': remember}">√</span>
+                    <span class="remember-me-text">Remember Me</span>
+                </div>
+                <div class="login-footer-right">
+                    <a class="forgot" href="#">Forgot password?</a>
+                </div>
+            </div>
+            <div class="login-btn-box">
+                <button class="login-btn" data-ng-click="login()">LOGIN</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mobile-ibm visible-mobile">
+    <span class="mobile-ibm-logo"></span>
+</div>

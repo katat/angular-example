@@ -1,0 +1,15 @@
+<div class="backdrop">
+    <!-- create answer modal -->
+    <div class="mobile-add-answer" data-off-click="toggleCreateAnswerModal()">
+        <div class="mobile-answer-left">
+            <span class="mobile-answer-duck"></span>
+            <textarea data-ng-model="answerInput" class="mobile-add-answer-input" rows="3" cols="20" placeholder="Type answer..."></textarea>
+        </div>
+        <div class="mobile-answer-right">
+            <span class="mobile-answer-say"></span>
+            <div class="mobile-add-answer-save" data-ng-click="addAnswer(answerInput);toggleCreateAnswerModal()">
+                <span>SAVE</span>
+            </div>
+        </div>
+    </div>
+</div>
